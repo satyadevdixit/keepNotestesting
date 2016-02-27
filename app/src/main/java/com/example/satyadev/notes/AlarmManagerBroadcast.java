@@ -147,10 +147,10 @@ public class AlarmManagerBroadcast  extends BroadcastReceiver {
                                 b1 = BitmapFactory.decodeByteArray(img, 0, img.length);
                                 WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
                                 Display display = wm.getDefaultDisplay();
-                                int  height = display.getHeight();
+                               int  height = display.getHeight();
                                 int  width = display.getWidth();
                                 Log.e("height","of phone"+height);
-                                Log.e("width","of phone"+width);
+                               Log.e("width","of phone"+width);
                                 if (height>width) {
                                     int newwidth = (int) (width / 4);
                                     width = newwidth;
