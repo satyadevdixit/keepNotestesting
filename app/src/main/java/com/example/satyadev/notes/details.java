@@ -93,7 +93,7 @@ public class details extends AppCompatActivity {
     public static final float BYTES_IN_MB = 1024.0f * 1024.0f;
 
 
-
+// test change on github
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -264,7 +264,7 @@ Log.e("check", "is " + check);
     int videocheck = Integer.parseInt(check);
     if (videocheck==1) {
         Cursor cursor = data.fetchvideo(sql, pass);
-        Log.e("show", "videoy o89o9 9" + cursor.getCount());
+      //  Log.e("show", "videoy o89o9 9" + cursor.getCount());
         if ((cursor.getCount()) > 0) {
             if (cursor.moveToFirst()) {
                 video = 1;
@@ -292,7 +292,7 @@ Log.e("check", "is " + check);
                     deleteimage.setVisibility(View.VISIBLE);
                     Log.e("show", "video56" + videopreviewbitmap);
                 } catch (Exception h) {
-                    Log.e("show fetch", "video error" + h);
+                   // Log.e("show fetch", "video error" + h);
                 }
 
             }

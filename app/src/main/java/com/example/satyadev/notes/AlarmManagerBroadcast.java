@@ -58,6 +58,8 @@ public class AlarmManagerBroadcast  extends BroadcastReceiver {
     private static final String QUICKBOOT_POWERON =
             "android.intent.action.QUICKBOOT_POWERON";
 
+    // make changes to check for
+
     @Override
     public void onReceive(Context context, Intent intent) {
 
