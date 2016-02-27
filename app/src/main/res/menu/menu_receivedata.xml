@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.satyadev.notes.createnewnote">
+
+
+
+
+    <item
+        android:id="@+id/action_edit"
+        android:orderInCategory="101"
+        android:title="@string/next"
+        android:onClick="save"
+        android:icon="@mipmap/doneall"
+        android:layout_alignParentLeft="true"
+        app:showAsAction="always"
+        />
+
+
+
+
+</menu>

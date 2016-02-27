@@ -1,0 +1,74 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f44336"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:src="@mipmap/backbutton"
+            android:onClick="back"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="search notes"
+            android:background="#00000000"
+            android:singleLine="true"
+            android:textSize="28dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:id="@+id/search" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/noresult"
+        android:textColor="#FF6347"
+        android:textStyle="bold"
+        android:paddingLeft="0dp"
+        android:maxLines="1"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:maxLength="70"
+        android:ellipsize="end"
+        android:text="no result found"
+        android:paddingTop="2dp"
+        android:paddingBottom="0dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="50sp"
+        android:layout_marginTop="120dp"
+
+        />
+
+
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0sp"
+            android:id="@+id/notification"
+            ></ListView>
+
+
+</LinearLayout>

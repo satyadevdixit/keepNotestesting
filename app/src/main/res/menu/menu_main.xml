@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+
+    <item
+        android:id="@+id/action_cancel"
+        android:orderInCategory="101"
+        android:title="@string/next"
+        android:onClick="search"
+        android:icon="@mipmap/search"
+        android:layout_alignParentLeft="true"
+        app:showAsAction="always"
+        />
+
+
+</menu>

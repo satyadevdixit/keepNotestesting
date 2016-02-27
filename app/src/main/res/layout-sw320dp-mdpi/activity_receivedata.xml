@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f44336">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:src="@mipmap/backbutton"
+            android:onClick="back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="23dp"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    >
+
+
+                    <ImageView
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/imgView"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:onClick="deleteimage"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ImageView
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/deleteimage"
+                        android:src="@mipmap/cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:scaleType="centerCrop"
+                        android:layout_height="wrap_content"
+                        />
+
+                </FrameLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="title"
+                    android:background="#00000000"
+                    android:linksClickable="true"
+                    android:layout_marginLeft="12dp"
+                    android:inputType="textMultiLine|textFilter"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:id="@+id/title" />
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="note"
+                    android:layout_marginRight="12dp"
+                    android:autoLink="all"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:inputType="textMultiLine|textFilter"
+                    android:background="#00000000"
+                    android:id="@+id/note"
+                    android:textSize="20dp"
+                    />
+
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_alarm"
+        android:orderInCategory="101"
+        android:title="@string/next"
+        android:onClick="setalarm"
+        android:icon="@mipmap/alarm"
+        android:layout_alignParentLeft="true"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/action_edit"
+        android:orderInCategory="101"
+        android:title="@string/next"
+        android:onClick="menuedit"
+        android:icon="@mipmap/done"
+        android:layout_alignParentLeft="true"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_delete"
+        android:orderInCategory="101"
+        android:title="@string/next"
+        android:onClick="alert"
+        android:icon="@mipmap/delete"
+        android:layout_alignParentLeft="true"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_camera"
+        android:orderInCategory="101"
+        android:title="@string/next"
+        android:onClick="camera"
+        android:icon="@mipmap/videostart"
+        android:layout_alignParentLeft="true"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="101"
+        android:title="sharee"
+        android:onClick="share"
+        android:icon="@mipmap/share"
+        android:layout_alignParentLeft="true"
+
+        app:showAsAction="always"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        />
+
+</menu>
